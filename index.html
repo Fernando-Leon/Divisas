@@ -6,11 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divisas</title>
     <link rel="stylesheet" href="CSS/main.css" type="text/css">
+    <link rel="icon" href="IMGS/icon.png">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- Import axios library -->
 </head>
 <body>
-    <div id="container-values">
+
+    <!-- Start Navigation bar -->
+    <nav>
+        <div id="cont-icon"><img src="IMGS/icon.png" alt=""></div>
+        <div id="link-navigation">
+            <a href="#">Inicio</a>
+            <a href="#">Billites y Mondas</a>
+            <a href="#">Cambio</a>
+            <a href="#">Tasa interes</a>
+            <a href="#">Mas</a>
+        </div>
+    </nav>
+    <!-- End Navigation bar -->
+
+    <!-- Start main info -->
+    <div class="cont-main">
+
     </div>
+    <!-- End main info -->
+
+    <!-- Start footer -->
+
+    <footer>
+        <div id="info-footer">
+            <ul class="border-up">
+                <li class="li-center"><img src="../IMGS/banxico.png" alt=""><a href="https://www.banxico.org.mx/" target="_blank" class="a-center">Banco Central de México</a></li>
+                <li>Datos obtenidos de la <a href="https://www.banxico.org.mx/SieAPIRest/service/v1/;jsessionid=9eb44e309b2ea220b1621a9205bb" target="_blank">API</a> de Banxico (Banco Central de México) cuyo objetivo prioritario es mantener una inflación baja y estable. </li>
+            </ul>
+        </div>
+        <div id="info-dev">
+            <ul id="info-ul-one" class="border-up">
+                <li>Web desarrollada por:<br>Fernando León Monroy</li>
+                <li class="border-left">Contacto</li>
+                <ul id="info-ul-two">
+                    <li class="li-center border-left"><a href=""><img src="../IMGS/whatsapp.png" alt=""></a><span class="a-center">Whatssap</span></li>
+                    <li class="li-center border-left"><a href=""><img src="../IMGS/github.png" alt=""></a><span>GitHub</span></li>
+                    <li class="li-center border-left"><a href="mailto:leon.monroy.fernando@gmail.com"><img src="../IMGS/gmail.png" alt=""></a><span>Gmail</span></li>
+                </ul>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- End footer -->
+
     <script type="text/javascript" src="JS/main.js"></script>
-</body>
+    </body>
 </html>

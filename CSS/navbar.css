@@ -1,0 +1,21 @@
+nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+nav #cont-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav #cont-icon img {
+    width: 80%;
+    padding: 10%;
+}
+
+nav #link-navigation {
+    background-color: red;
+}
+

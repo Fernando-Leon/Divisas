@@ -1,18 +1,27 @@
+@import url("footer.css");
+@import url("navbar.css");
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
+:root {
+    --mainColor: #22272C;
+    --secondColor: #202442;
+    --treeColor: #FCFBF8;
+    --colorExt: #FFFFFF;
+    --colorScale: rgba(255, 255, 255, 0.7);
+}
+
 body {
     width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    background-color: var(--mainColor);
 }
 
 #container-values {
-    width: 85%;
+    width: 80%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -20,23 +29,63 @@ body {
     justify-content: center;
 }
 
-#item {
+.item {
+    color: var(--colorExt);
     width: 100%;
     height: auto;
-    padding: 10px;
-    margin: 8px;
-    border: solid 1px #aaa;
+    border: solid 1px var(--treeColor);
     border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.title-items {
+    color: var(--colorExt);
+    width: 100%;
+    height: auto;
+    border-bottom: solid 1px var(--treeColor);
+    text-align: start;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item .title {
+    grid-column: 1/5;
+}
+
+.item .date {
+    grid-column: 1/5;
+}
+
+.item .stock {
+    grid-column: 1/5;
+}
+
+.stock, .date, .title{
+    padding: 15px;
+}
+
+.item .cont-image {
+    background-color: var(--colorScale);
+    grid-column: 5/6;
+    grid-row: 1/4;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .3s;
 }
 
-#item div {
-    padding: 10px;
-    width: 80%;
+.item .cont-image img {
+    width: 70%;
+    filter: grayscale(100%);
+    transition: .3s;
 }
 
-#cont-image img {
-    width: 20%;
+.cont-image img:hover {
+    filter: grayscale(0%);
+    width: 85%;
 }
