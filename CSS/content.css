@@ -1,0 +1,7 @@
+#container-values {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}

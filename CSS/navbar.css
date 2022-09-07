@@ -1,7 +1,9 @@
 nav {
-    width: 100%;
+    width: 90%;
     display: grid;
+    margin: auto;
     grid-template-columns: 10% 90%;
+    border-bottom: 1px solid var(--colorExt);
 }
 
 nav #cont-icon {
@@ -16,6 +18,22 @@ nav #cont-icon img {
 }
 
 nav #link-navigation {
-    background-color: red;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
+nav #link-navigation a {
+    padding: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    transition: 0.3s;
+}
+
+nav #link-navigation a:hover {
+    border-bottom: solid 1px var(--colorExt);
+}
+
+#status-link {
+    border-bottom: solid 1px var(--colorExt);
+} 
